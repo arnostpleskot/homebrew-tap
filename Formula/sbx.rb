@@ -18,15 +18,18 @@ class Sbx < Formula
 
     libexec.install "containerd-shim-nerdbox-v1"
     libexec.install "mkfs.erofs"
-
     libexec.install "containerd-shim-nerdbox-gpu-v1" if Hardware::CPU.intel?
 
     libexec.install Dir["nerdbox-kernel-*"]
     libexec.install Dir["nerdbox-rootfs-*.erofs"]
-
     (libexec/"lib").install "libsailor.so"
 
     share.install "apparmor-profile"
+
+    generate_completions_from_executable(
+      bin/"sbx",
+      "completion",
+    )
   end
 
   def caveats
