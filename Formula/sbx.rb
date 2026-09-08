@@ -3,11 +3,11 @@ class Sbx < Formula
   homepage "https://github.com/docker/sbx-releases"
 
   if Hardware::CPU.arm?
-    url "https://github.com/docker/sbx-releases/releases/download/v0.38.0/DockerSandboxes-linux-arm64.tar.gz"
-    sha256 "051fdf8349f8a66db47a990e11a30cd1d2e013ac6c8e42e48c072bfcec06a1d5"
+    url "https://github.com/docker/sbx-releases/releases/download/v0.42.1/DockerSandboxes-linux-arm64.tar.gz"
+    sha256 "285b36cdb46ce65f792f006869698f2664fcde8adc1e8524357f150f9368dd4c"
   else
-    url "https://github.com/docker/sbx-releases/releases/download/v0.38.0/DockerSandboxes-linux.tar.gz"
-    sha256 "9ebcea831d4d270e25ae1777bf15e24756abfbf8791ad27294754682838ed00b"
+    url "https://github.com/docker/sbx-releases/releases/download/v0.42.1/DockerSandboxes-linux.tar.gz"
+    sha256 "fe46facba420d1cb8b1dad57d5b182d6df9dadd46c324c2ca3ef574fb7eada6f"
   end
 
   depends_on "e2fsprogs"
