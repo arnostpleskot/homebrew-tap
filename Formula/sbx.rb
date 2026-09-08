@@ -10,6 +10,12 @@ class Sbx < Formula
     sha256 "fe46facba420d1cb8b1dad57d5b182d6df9dadd46c324c2ca3ef574fb7eada6f"
   end
 
+  livecheck do
+    url :stable
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
+    strategy :github_latest
+  end
+
   depends_on "e2fsprogs"
   depends_on :linux
 
