@@ -1,8 +1,8 @@
 class Sbx < Formula
   desc "Build, run, and govern agents across the software development lifecycle"
   homepage "https://github.com/docker/sbx-releases"
-  url "https://github.com/docker/sbx-releases/releases/download/v0.49.1/DockerSandboxes-linux.tar.gz"
-  sha256 "4f2aa3dc6404e3700925e6baeda72ca26d8a36768d2bfe8056f1e8ecdfd4540e"
+  url "https://github.com/docker/sbx-releases/releases/download/v0.49.2/DockerSandboxes-linux.tar.gz"
+  sha256 "a3f363998cd9f6caa7b02323a5d671987a9887a278fb888aca20fa9f80851e87"
 
   livecheck do
     url :stable
@@ -14,8 +14,8 @@ class Sbx < Formula
   depends_on :linux
 
   resource "sbx-arm64" do
-    url "https://github.com/docker/sbx-releases/releases/download/v0.49.1/DockerSandboxes-linux-arm64.tar.gz"
-    sha256 "3a3feaf4832ffc070c76e5eddd99fb32aa29a9e686ae9c8ac8117c9ecd49920e"
+    url "https://github.com/docker/sbx-releases/releases/download/v0.49.2/DockerSandboxes-linux-arm64.tar.gz"
+    sha256 "53c5250c480b8ef671d89413d824af62e08575c3b0051570dc5efa9f48a94eb6"
 
     livecheck do
       formula :parent
